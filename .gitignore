@@ -1,0 +1,12 @@
+# ignore all logs
+*.log
+Logs/
+
+# ignore all vscode files
+*.vscode
+
+# ignore Library folder to avoid merge errors
+Library/
+
+# ignore .DS_Store
+*.DS_Store
