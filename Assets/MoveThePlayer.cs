@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class MoveThePlayer : MonoBehaviour
 {
-      public CharacterController2D controller;
+    public CharacterController2D controller;
 
     public float runSpeed = 40f;
 
-    public float horizontalMove = 0.5f;
+    public float horizontalMove = 0f;
 
     bool jump = false;
 
@@ -22,9 +22,9 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-   void FixedUpdate()
-   {
-     controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
+    void FixedUpdate()
+    {
+        controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
         jump = false;
-   }
+    }
 }
