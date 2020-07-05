@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Projectile : MonoBehaviour
 {
@@ -33,7 +34,8 @@ public class Projectile : MonoBehaviour
         {
             DestroyProjectile();
             Destroy(other.gameObject);
-         }
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
 
 
     }
@@ -41,6 +43,7 @@ public class Projectile : MonoBehaviour
     void DestroyProjectile()
     {
         Destroy(gameObject);
+
     }
 
 
