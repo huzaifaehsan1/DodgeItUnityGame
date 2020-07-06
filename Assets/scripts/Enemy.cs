@@ -4,39 +4,40 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public float minX;
+    public float maxX;
+    public float minY;
+    public float maxY;
+
+    Vector2 targetPosition;
+
     public float speed;
-    public float stoppingDistance;
-    public float retreatDistance;
 
     private float timeBtwShots;
     public float startTimeBtwShots;
-
     public GameObject projectile;
-    public Transform player;
 
-    // Start is called before the first frame update
+
+      
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        targetPosition = GetRandomPosition();
         timeBtwShots = startTimeBtwShots;
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-        if (Vector2.Distance(transform.position,player.position) > stoppingDistance)
+        if ((Vector2)transform.position != targetPosition)
         {
-            transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
-        } else if (Vector2.Distance(transform.position, player.position) < stoppingDistance && Vector2.Distance(transform.position, player.position) > retreatDistance)
-        {
-            transform.position = this.transform.position;
+            transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
         }
-        else if (Vector2.Distance(transform.position, player.position) < retreatDistance)
+        else
         {
-            transform.position = Vector2.MoveTowards(transform.position, player.position, -speed * Time.deltaTime);
+            targetPosition = GetRandomPosition();
         }
 
-        if(timeBtwShots <= 0)
+        if (timeBtwShots <= 0)
         {
             Instantiate(projectile, transform.position, Quaternion.identity);
             timeBtwShots = startTimeBtwShots;
@@ -46,4 +47,13 @@ public class Enemy : MonoBehaviour
             timeBtwShots -= Time.deltaTime;
         }
     }
+
+      
+        Vector2 GetRandomPosition()
+        {
+            float randomX = Random.Range(minX, maxX);
+            float randomY = Random.Range(minY, maxY);
+            return new Vector2(randomX, randomY);
+        }
+    
 }
