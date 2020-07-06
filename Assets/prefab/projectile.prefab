@@ -112,8 +112,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45c031eb5146b48449e1b68f8c012c8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _cloudParticlePrefab: {fileID: 143186742998373516, guid: 5fad3eaba12f5e040a2afbc19d905b8e,
+    type: 3}
   speed: 10
-  lifetime: 1
 --- !u!50 &-8312642261014819749
 Rigidbody2D:
   serializedVersion: 4
