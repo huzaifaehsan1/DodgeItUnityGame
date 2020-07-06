@@ -9,8 +9,8 @@ public class Projectile : MonoBehaviour
     public float speed;
     private Transform player;
     private Vector2 target;
-    
 
+    [SerializeField] private GameObject _explosionPrefab;
 
     void Start()
     {
@@ -34,8 +34,8 @@ public class Projectile : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             DestroyProjectile();
+            Instantiate(_explosionPrefab, transform.position, Quaternion.identity);
             Destroy(other.gameObject);
-
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             
         }
