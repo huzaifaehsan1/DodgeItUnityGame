@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
@@ -17,8 +15,6 @@ public class Enemy : MonoBehaviour
     public float startTimeBtwShots;
     public GameObject projectile;
 
-
-      
     void Start()
     {
         targetPosition = GetRandomPosition();
@@ -55,5 +51,5 @@ public class Enemy : MonoBehaviour
             float randomY = Random.Range(minY, maxY);
             return new Vector2(randomX, randomY);
         }
-    
+
 }

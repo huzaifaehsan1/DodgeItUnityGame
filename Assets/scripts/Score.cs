@@ -1,27 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
     public Text scoreText;
-    private float startScore;
+    public float s;
 
     void Start()
     {
-        startScore = Time.time;
+        s = Time.time;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        float q = Time.time *10;
-
-
-        string seconds = (q).ToString("f0");
-        
-
-        scoreText.text = "Score:" + seconds;
+        s = GetComponent<Timer>().t * 10;
+        scoreText.text = "Score:" + s;
     }
 }

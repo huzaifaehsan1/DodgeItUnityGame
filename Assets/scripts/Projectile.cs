@@ -1,21 +1,20 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Projectile : MonoBehaviour
 {
-    
+
     public float speed;
     private Transform player;
     private Vector2 target;
+
 
     [SerializeField] private GameObject _explosionPrefab;
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-
         target = new Vector2(player.position.x, player.position.y);
     }
 
@@ -29,6 +28,7 @@ public class Projectile : MonoBehaviour
         }
     }
 
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
@@ -36,19 +36,18 @@ public class Projectile : MonoBehaviour
             DestroyProjectile();
             Instantiate(_explosionPrefab, transform.position, Quaternion.identity);
             Destroy(other.gameObject);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            
+            SceneManager.LoadScene("Menu");
         }
 
-
     }
+
 
     void DestroyProjectile()
     {
         Destroy(gameObject);
-
     }
 
-
-
 }
+
+
+
