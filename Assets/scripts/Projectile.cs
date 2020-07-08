@@ -8,6 +8,8 @@ public class Projectile : MonoBehaviour
     public float speed;
     private Transform player;
     private Vector2 target;
+    public float TimeToLive = 5f;
+
 
 
     [SerializeField] private GameObject _explosionPrefab;
@@ -16,16 +18,20 @@ public class Projectile : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         target = new Vector2(player.position.x, player.position.y);
+       
     }
 
     void Update()
     {
+
+        Destroy(gameObject, TimeToLive);
         transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
 
         if (transform.position.x == target.x && transform.position.y == target.y)
         {
             DestroyProjectile();
         }
+
     }
 
 
@@ -47,6 +53,7 @@ public class Projectile : MonoBehaviour
         Destroy(gameObject);
     }
 
+    
 }
 
 
