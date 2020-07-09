@@ -14,6 +14,7 @@ public class Score : MonoBehaviour
     void Update()
     {
         s = GetComponent<Timer>().t * 10;
-        scoreText.text = "Score:" + s;
+        string sc = ((int)s).ToString("f0");
+        scoreText.text = "Score:" + sc;
     }
 }

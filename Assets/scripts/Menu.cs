@@ -18,6 +18,11 @@ public class Menu : MonoBehaviour
         Debug.Log("QUIT!");
         Application.Quit();
     }
+
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
 }
 
 

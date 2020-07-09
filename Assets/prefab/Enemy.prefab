@@ -98,7 +98,7 @@ MonoBehaviour:
   maxX: 11.6
   minY: -6.56
   maxY: 5.31
-  speed: 2
+  speed: 0
   startTimeBtwShots: 1
   projectile: {fileID: 3973523448761277501, guid: b32866ce1da0e6d4fb90d620575cd14f,
     type: 3}
