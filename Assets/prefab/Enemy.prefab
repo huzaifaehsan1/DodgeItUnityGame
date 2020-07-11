@@ -71,7 +71,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 757d8adb80e089b4285d5a0cc4dc6cc7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: efd237e6d4d29894ab43d392e8d63862, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,7 +98,7 @@ MonoBehaviour:
   maxX: 11.6
   minY: -6.56
   maxY: 5.31
-  speed: 0
-  startTimeBtwShots: 1
+  speed: 5
+  startTimeBtwShots: 2
   projectile: {fileID: 3973523448761277501, guid: b32866ce1da0e6d4fb90d620575cd14f,
     type: 3}

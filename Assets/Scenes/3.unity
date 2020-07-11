@@ -190,7 +190,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: QUIT
+  m_Text: QUIT!
 --- !u!222 &159083818
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -894,7 +894,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: RESTART LEVEL
+  m_Text: TRY AGAIN?
 --- !u!222 &1744218783
 CanvasRenderer:
   m_ObjectHideFlags: 0

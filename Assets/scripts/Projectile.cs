@@ -9,16 +9,13 @@ public class Projectile : MonoBehaviour
     private Transform player;
     private Vector2 target;
     public float TimeToLive = 5f;
-
-
-
     [SerializeField] private GameObject _explosionPrefab;
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         target = new Vector2(player.position.x, player.position.y);
-       
+
     }
 
     void Update()
@@ -42,8 +39,9 @@ public class Projectile : MonoBehaviour
             DestroyProjectile();
             Instantiate(_explosionPrefab, transform.position, Quaternion.identity);
             Destroy(other.gameObject);
-            SceneManager.LoadScene("Menu");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
+
 
     }
 
@@ -52,8 +50,6 @@ public class Projectile : MonoBehaviour
     {
         Destroy(gameObject);
     }
-
-    
 }
 
 

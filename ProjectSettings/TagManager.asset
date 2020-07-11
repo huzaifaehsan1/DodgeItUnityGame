@@ -44,3 +44,6 @@ TagManager:
   - name: ForeGround
     uniqueID: 3876779335
     locked: 0
+  - name: Hello
+    uniqueID: 2751028357
+    locked: 0

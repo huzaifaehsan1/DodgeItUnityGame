@@ -372,7 +372,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: RESUME
+  m_Text: RESUME?
 --- !u!222 &287639706
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -655,7 +655,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: QUIT
+  m_Text: QUIT!
 --- !u!222 &442370366
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -846,8 +846,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -42, y: -30}
-  m_SizeDelta: {x: 32.442505, y: 23.288696}
+  m_AnchoredPosition: {x: -1531.3, y: -24.205}
+  m_SizeDelta: {x: 48.392036, y: 34.73799}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &591323548
 MonoBehaviour:
@@ -1005,12 +1005,12 @@ PrefabInstance:
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 136.02008
+      value: 164.15
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 128
+      value: 158
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
@@ -1262,10 +1262,10 @@ RectTransform:
   m_Father: {fileID: 1721795269}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 8.020081, y: -30}
-  m_SizeDelta: {x: 243.50714, y: 53.97528}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 528, y: 426}
+  m_SizeDelta: {x: 243.50708, y: 53.97528}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1081252900
 MonoBehaviour:
@@ -1342,7 +1342,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -670.23, y: 255}
+  m_AnchoredPosition: {x: 677.88, y: 328}
   m_SizeDelta: {x: 187.24506, y: 56.95337}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1111984935
@@ -6491,11 +6491,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1722359760}
   - component: {fileID: 1722359759}
-  - component: {fileID: 1722359765}
   - component: {fileID: 1722359762}
   - component: {fileID: 1722359764}
-  - component: {fileID: 1722359766}
-  - component: {fileID: 1722359767}
   - component: {fileID: 1722359768}
   - component: {fileID: 1722359761}
   - component: {fileID: 1722359763}
@@ -6564,7 +6561,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1722359758}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.28, y: 2.57, z: 0}
+  m_LocalPosition: {x: -5.1, y: 1.99, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.24411485}
   m_Children:
   - {fileID: 1726960320}
@@ -6647,46 +6644,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1081252900}
   s: 0
---- !u!114 &1722359765
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1722359758}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 155d419098ec4254d8347a41f7839d09, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
---- !u!114 &1722359766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1722359758}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d57e397e4443c14a94013e6d6390492, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1722359767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1722359758}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3101f0ff34d6f234b81cec145b2a705c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  circle: {fileID: 0}
-  dot: {fileID: 0}
-  moveSpeed: 5
 --- !u!114 &1722359768
 MonoBehaviour:
   m_ObjectHideFlags: 0
