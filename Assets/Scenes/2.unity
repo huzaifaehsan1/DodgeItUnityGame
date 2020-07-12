@@ -703,10 +703,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac6da50bcc239e4c8f012728982cd6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1722359760}
-  speed: 5
-  circle: {fileID: 0}
-  outerCircle: {fileID: 0}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -844,10 +840,10 @@ RectTransform:
   m_Father: {fileID: 1721795269}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1531.3, y: -24.205}
-  m_SizeDelta: {x: 48.392036, y: 34.73799}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -653, y: 372}
+  m_SizeDelta: {x: 79.112976, y: 56.790894}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &591323548
 MonoBehaviour:
@@ -1005,12 +1001,12 @@ PrefabInstance:
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 164.15
+      value: 1416
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 158
+      value: 165
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
@@ -1264,7 +1260,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 528, y: 426}
+  m_AnchoredPosition: {x: 528, y: 372}
   m_SizeDelta: {x: 243.50708, y: 53.97528}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1081252900
@@ -1342,7 +1338,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 677.88, y: 328}
+  m_AnchoredPosition: {x: 677.88, y: 260.1}
   m_SizeDelta: {x: 187.24506, y: 56.95337}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1111984935
@@ -6496,6 +6492,7 @@ GameObject:
   - component: {fileID: 1722359768}
   - component: {fileID: 1722359761}
   - component: {fileID: 1722359763}
+  - component: {fileID: 1722359765}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -6644,6 +6641,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1081252900}
   s: 0
+--- !u!114 &1722359765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722359758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f3c531bdcb70a5449fd1a870182a79c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MainCamera: {fileID: 519420031}
 --- !u!114 &1722359768
 MonoBehaviour:
   m_ObjectHideFlags: 0
