@@ -50,5 +50,6 @@ public class MyControl : MonoBehaviour
         IsDead = true;
         GetComponent<Score>().OnDeath();
     }
+
 }
 
