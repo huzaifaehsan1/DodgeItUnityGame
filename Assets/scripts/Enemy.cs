@@ -44,12 +44,14 @@ public class Enemy : MonoBehaviour
         }
     }
 
-      
-        Vector2 GetRandomPosition()
-        {
-            float randomX = Random.Range(minX, maxX);
-            float randomY = Random.Range(minY, maxY);
-            return new Vector2(randomX, randomY);
-        }
 
+    Vector2 GetRandomPosition()
+    {
+        float randomX = Random.Range(minX, maxX);
+        float randomY = Random.Range(minY, maxY);
+        return new Vector2(randomX, randomY);
+    }
+
+    
 }
+   

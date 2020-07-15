@@ -5,7 +5,7 @@ public class AdControl : MonoBehaviour
 {
 
     string gameId = "3708645";
-    bool TestMode = false;
+    bool TestMode = true;
 
     void Start()
     {

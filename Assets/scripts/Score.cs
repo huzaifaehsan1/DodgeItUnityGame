@@ -1,20 +1,49 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class Score : MonoBehaviour
 {
-    public Text scoreText;
-    public float s;
+    private float score = 0.0f;
 
-    void Start()
-    {
-        s = Time.time;
-    }
+    private int DifficultyLevel = 1;
+    private int MaxDifficultyLevel = 10;
+    private int ScoreToNextLevel = 10;
+
+    public Text scoreText;
+
+    private bool IsDead = false;
+
+    public DeathMenu death;
 
     void Update()
     {
-        s = GetComponent<Timer>().t * 10;
-        string sc = ((int)s).ToString("f0");
-        scoreText.text = "Score:" + sc;
+        if (IsDead)
+            return;
+
+        if (score >= ScoreToNextLevel)
+            LevelUp();
+
+        score += Time.deltaTime * DifficultyLevel;
+        scoreText.text = ((int)score).ToString ();
     }
+
+    void LevelUp()
+    {
+
+        if (DifficultyLevel == MaxDifficultyLevel)
+            return;
+
+        ScoreToNextLevel *= 2;
+        DifficultyLevel++;
+
+        GetComponent<MyControl>().SetSpeed(DifficultyLevel);
+    }
+
+    public void OnDeath()
+    {
+        IsDead = true;
+        death.ToggleEndMenu (score);
+    }
+
 }

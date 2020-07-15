@@ -728,8 +728,6 @@ GameObject:
   m_Component:
   - component: {fileID: 594337776}
   - component: {fileID: 594337775}
-  - component: {fileID: 594337774}
-  - component: {fileID: 594337773}
   - component: {fileID: 594337771}
   - component: {fileID: 594337770}
   - component: {fileID: 594337772}
@@ -806,34 +804,6 @@ MonoBehaviour:
   speed: 5
   startTimeBtwShots: 2
   projectile: {fileID: 0}
---- !u!114 &594337773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 594337769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 817088778916ec24bad4856e70e2e0bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
-  s: 0
---- !u!114 &594337774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 594337769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0d6d6620e9dbcb4c90a70ff0d94850a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timerText: {fileID: 0}
-  t: 0
 --- !u!212 &594337775
 SpriteRenderer:
   m_ObjectHideFlags: 0

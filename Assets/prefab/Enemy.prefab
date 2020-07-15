@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 4056315349549302534}
   - component: {fileID: 4056315349549302529}
   - component: {fileID: 4056315349549302528}
+  - component: {fileID: 2274242960704944064}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,3 +103,16 @@ MonoBehaviour:
   startTimeBtwShots: 2
   projectile: {fileID: 3973523448761277501, guid: b32866ce1da0e6d4fb90d620575cd14f,
     type: 3}
+--- !u!114 &2274242960704944064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4056315349549302531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8712579200b8744eb58735d53198db6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}

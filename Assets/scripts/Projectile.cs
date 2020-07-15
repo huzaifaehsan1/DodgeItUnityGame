@@ -38,11 +38,7 @@ public class Projectile : MonoBehaviour
         {
             DestroyProjectile();
             Instantiate(_explosionPrefab, transform.position, Quaternion.identity);
-            Destroy(other.gameObject);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
-
-
     }
 
 
@@ -50,6 +46,7 @@ public class Projectile : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
 }
 
 
