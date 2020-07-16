@@ -47,6 +47,7 @@ public class MyControl : MonoBehaviour
 
     void Death()
     {
+        Destroy(gameObject);
         IsDead = true;
         GetComponent<Score>().OnDeath();
     }

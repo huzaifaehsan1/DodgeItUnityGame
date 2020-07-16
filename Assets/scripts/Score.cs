@@ -25,7 +25,7 @@ public class Score : MonoBehaviour
             LevelUp();
 
         score += Time.deltaTime * DifficultyLevel;
-        scoreText.text = ((int)score).ToString ();
+        scoreText.text =  ((int)score).ToString ();
     }
 
     void LevelUp()

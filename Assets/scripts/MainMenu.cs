@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Collections.Generic;
 using System.Collections;
 
 public class MainMenu : MonoBehaviour
 {
     public Text HighScoreText;
-
+    
     public void Start()
     {
         HighScoreText.text = "Highscore: " + ((int)PlayerPrefs.GetFloat ("Highscore"));
@@ -14,6 +15,7 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
+       
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
