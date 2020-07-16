@@ -30,7 +30,7 @@ public class DeathMenu : MonoBehaviour
 
     public void ToggleEndMenu(float score)
     {
-        gameObject.SetActive(true);
+        gameObject.SetActive(true); 
         ScoreText.text = "Score: " + ((int)score).ToString();
         IsShowned = true;
     }

@@ -42,6 +42,7 @@ public class Score : MonoBehaviour
 
     public void OnDeath()
     {
+    
         IsDead = true;
 
         if(PlayerPrefs.GetFloat("Highscore") < score)
